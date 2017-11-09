@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Fighter</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/style.css">
+</head>
+
+<body class="backgroundImage container">
+    <image class="titlefont" src="./Images/Title-font.png">
+    <div>
+        <!-- prompts update as game unfolds -->
+        <p id="prompts"></p>
+        <p id="continueprompts"></p>
+        <div>
+            <form>
+                <input id="continueinput" type="text" maxlength="1" autocomplete="off"/>
+                <input id="userinput" maxlength="1" type="text" autocomplete="off">
+            </form>
+            <button id="continuebutton" type="button">Confirm</button>
+            <button id="guess">Guess</button>
+        </div>
+    </div>
+    <div>
+        <image class="kenIdle" src="./Images/Ken-idle.webp" />
+        <image class="fireball" src="./Images/hadouken.gif" />
+        <image class="ryuIdle" src="./Images/Ryu-idle.gif" />
+        
+        <!-- This p section displays the current status of the game -->
+        <p class="status"></p>
+    </div>
+    <div>
+        <progress id="health1" class="healthBar1" value="100" max="100"></progress>
+        <progress id="health2" class="healthBar2" value="100" max="100"></progress>
+    </div>
+    <div>
+        <!-- This is where the blanks will appear for the user -->
+        <div class="blanks"></div>
+    </div>
+
+    <audio id="kensound" src="./Audio/Ken-hadouken-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="ryusound" src="./Audio/Ryu-hurricane-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="startsound" src="./Audio/Start-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="yousound" src="./Audio/You-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="winsound" src="./Audio/Win-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="losesound" src="./Audio/Lose-Sound.mp3" type="audio/mpeg"></audio>
+    <audio id="perfectsound" src="./Audio/Perfect-sound.mp3" type="audio/mpeg"></audio>
+    <audio id="newchallengesound" src="./Audio/New-challenger-sound.mp3" type="audio/mpeg"></audio>
+
+    <!-- Scripts -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./hangman_fighter.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    height: 100vh;
+}
+h1 {
+    margin: 1%;
+    text-align: center;
+}
+.action {
+    visibility: hidden;
+}
+.backgroundImage {
+    position: absolute;
+    background-attachment: fixed;
+    background-image: url('../Images/Ryu-stage.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+    width: 100%; 
+}
+.blanks {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    text-align: center;  
+}
+.fireball {
+    display: inline-block;
+    visibility: hidden;
+    margin-top: 10%;
+}
+.healthBar1 {
+    position: absolute;
+    left: 6%;
+    bottom: 8%;
+}
+.healthBar2 {
+    position: absolute;
+    right: 6%;
+    bottom: 8%;
+}
+.kenIdle {
+    width: 25%;
+    height: 65vh;
+    float: left;
+}
+.revealgame {
+    visibility: visible;
+}
+.ryuIdle {
+    width: 25%;
+    height: 65vh;
+    position: relative;
+    float: right;
+
+    /* Flips image for different browsers */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: "FlipH";
+    -ms-filter: "FlipH";
+}
+.status {
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.titlefont {
+    display: block;
+    margin: 0% auto;
+}
+#continuebutton {
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5% auto;
+}
+#continueinput {
+    text-align: center;
+    display: none;
+    font-size: 1em;
+    margin: 0px auto;
+    width: 40%;
+    height: 2em;
+}
+#continueprompts {
+    display: none;
+    font-size: 1.2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 1%;
+}
+#guess {
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0.5% auto;
+}
+#prompts {
+    font-size: 1.2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 1%;
+}
+#userinput {
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    margin: 0px auto;
+    width: 40%;
+    height: 2em;
+}
