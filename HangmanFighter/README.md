@@ -4,5 +4,4 @@ further and created an interface using JQuery. Since I don't
 like the idea of hanging anyone, I went with a Street Fighter
 themed game. This was my 1st attempt just using JQuery.
 
-You can run this program by opening the index.html file.
-No node-modules are required.
+You can play the game here: http://boring-join.surge.sh/
